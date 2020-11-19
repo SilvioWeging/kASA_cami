@@ -1,0 +1,1 @@
+export PATH=/gpfs1/data/idiv_gogoldoe/weging/krakenuniq/build/jellyfish-install/bin:$PATH

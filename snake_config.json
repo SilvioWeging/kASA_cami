@@ -1,0 +1,14 @@
+{
+"path": "/mnt/i/Git/kASA_cami/",
+"ram": 100,
+"threads": 8,
+"kASA": "/gpfs0/home/weging/CkMeres/kASA/kASA",
+"kASAParameters": "--jsonl",
+"128": 1,
+"Kraken2Path": "/path/to/kraken2/build/",
+"ClarkPath": "/path/to/clark/",
+"KrakenPath": "/path/to/kraken/build/",
+"CentrifugePath": "/path/to/centrifuge/bin/",
+"metacachePath": "/path/to/metacache/",
+"ganonPath": "/path/to/ganon/bin/"
+}
