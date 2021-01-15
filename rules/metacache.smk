@@ -41,6 +41,8 @@ rule evalmetacache:
 			temp=${{file#${{path}}results/metacache_profiles_sample_}}
 			filename=${{temp%.fq.txt}}
 			python ${{path}}scripts/MetaCacheCountToCAMI.py -i ${{file}} -o ${{path}}results/metacache_${{filename}}.cami -s ${{filename}} -t 0.0 -n {config[path]}index/taxonomy/nodes.dmp -m {config[path]}index/taxonomy/names.dmp
+			python ${{path}}scripts/MetaCacheCountToCAMI.py -i ${{file}} -o ${{path}}results/metacache-0.01_${{filename}}.cami -s ${{filename}} -t 0.0 -n {config[path]}index/taxonomy/nodes.dmp -m {config[path]}index/taxonomy/names.dmp -t 0.01
 		done
 		cat ${{path}}results/metacache_*.cami > ${{path}}results/metacache_all.cami
+		cat ${{path}}results/metacache-0.01_*.cami > ${{path}}results/metacache-0.01_all.cami
 		"""
